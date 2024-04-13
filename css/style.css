@@ -6,7 +6,7 @@
 }
 /*common code*/
 :root {
-  --main-color: #b8a086;
+  --main-color: #b35f0a;
 }
 .container {
   width: 80%;
@@ -420,10 +420,10 @@ header {
   border-bottom: 2px solid var(--main-color);
 }
 .featured-items {
- display: grid;
- grid-template-columns: auto auto auto;
- grid-template-rows: auto auto;
- grid-gap:15px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 15px;
 }
 .featured-item {
   /* margin: 0 10px; */
@@ -438,13 +438,12 @@ header {
   position: relative;
   position: absolute;
   top: 0;
- 
+
   transform: scale(0);
   transition: transform 0.3s;
 }
-.featured-item:hover .background-cover{
-
-transform: scale(1);
+.featured-item:hover .background-cover {
+  transform: scale(1);
 }
 .background-cover .background-icon {
   position: absolute;
@@ -453,33 +452,90 @@ transform: scale(1);
   transform: translate(-50%, -50%);
 }
 .background-icon i {
-  
   padding: 6px;
   margin: 0 3px;
   background-color: #000;
   color: #fff;
 }
-.featured-item h4{
+.featured-item h4 {
   display: inline-block;
-  
 }
-.featured-item p{
+.featured-item p {
   margin: 5px 0;
   color: #50504e;
 }
-.featured-item del{
+.featured-item del {
   font-size: 13px;
 }
-.featured-item >i{
+.featured-item > i {
   color: yellow;
- 
 }
-.featured-item span{
+.featured-item span {
   position: absolute;
   display: inline-block;
   padding: 5px;
   background-color: var(--main-color);
   top: 0;
   right: 26px;
+}
+footer{
+background-color: #000;
+color: #fff;
+}
+.footer-content{
+display: grid;
+grid-template-columns: auto auto auto auto;
+gap: 40px;
+text-transform: capitalize;
+
+}
+.footer-logo img{
+  width:12%;
   
+}
+.footer-logo p{
+padding: 20px 0;
+font-size: 13px;
+}
+.footer-icon{
+  display: inline-block;
+  border: 1px solid #eee;
+  position: relative;
+padding:5px 5px 5px 50px;
+border-radius: 10px;
+
+
+
+}
+
+.footer-icon i{
+
+position: absolute;
+left: 5px;
+top:13px
+}
+.footer-icon span {
+  font-size: 12px;
+}
+
+ .inf-list{
+  list-style: none;
+  
+}
+ .inf-list li{
+  padding: 10px 0;
+}
+.sent-email{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #fff;
+  margin: 40px 0;
+}
+.sub-now .inf-list li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.footer-content h2{
+  font-size: 20px;
+  padding-bottom: 10px;
 }
