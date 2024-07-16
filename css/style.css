@@ -1,5 +1,5 @@
 
-@media (min-width:801px) and (max-width:1300px){
+@media (max-width:1400px) {
   * {
     font-family: "PT Sans", sans-serif;
     margin: 0;
@@ -547,7 +547,7 @@
     padding-bottom: 10px;
   }
 }
-@media (min-width:601px) and (max-width:800px){
+@media (max-width:992px){
   * {
     font-family: "PT Sans", sans-serif;
     margin: 0;
@@ -592,7 +592,7 @@
     list-style: none;
   }
   .header-nav .list li {
-    padding: 5px 10px;
+    padding: 5px;
     margin: 0 10px;
     display: inline-block;
     cursor: pointer;
@@ -716,6 +716,7 @@
   /*end header*/
   .slider img {
     border: 2px solid #000;
+    margin: auto;
   }
   
   .bolets span:first-child {
@@ -1095,7 +1096,7 @@
     padding-bottom: 10px;
   }
 }
-@media  (max-width:600px){
+@media  (max-width:576px){
   * {
     font-family: "PT Sans", sans-serif;
     margin: 0;
@@ -1107,11 +1108,12 @@
     --main-color: #b35f0a;
   }
   .container {
-    width: 90%;
+    width: 80%;
     margin: auto;
+    
   }
   .pd {
-    padding: 50px 0;
+   
   }
   /*header*/
   header {
@@ -1269,8 +1271,10 @@
   
   /*end header*/
   .slider img {
-    border: 2px solid #000;
+
     width: 100%;
+    margin: 16px 0;
+ 
   }
   
   .bolets span:first-child {
@@ -1337,8 +1341,11 @@
   
   .category-content {
     display: flex;
-    justify-content: space-between;
-    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
     position: relative;
     text-transform: capitalize;
   }
@@ -1381,30 +1388,33 @@
   }
   .discount {
     display: flex;
-    /* display: grid;
-    grid-template-columns: 50% 22% 22%;
-    grid-gap: 2.2%; */
-    height: 400px;
+     flex-wrap:wrap-reverse;
+    height: 800px;
   }
   .discount-p {
     padding: 30px;
     background-color: #ccccc9;
-    flex: 2;
+    flex: 12;
+    margin : 0 15px
   }
   .discount-pic1 {
-    margin: 0 20px;
+  
     background-image: url(../image/dis2.jpg);
     background-size: cover;
+    flex:12;
+    margin: 0 10px;
   }
   .discount .discount-item:last-child {
     background-image: url(../image/dis1.jpg);
     background-size: cover;
   }
   .discount-item {
-    flex: 1;
+  
     padding: 20px 10px;
     text-transform: capitalize;
     transition: transform 0.3s;
+    margin:15px 0 ;
+    flex:12;
   }
   .discount-item span {
     color: #969695;
@@ -1519,6 +1529,7 @@
   .featured-list {
     display: flex;
     justify-content: center;
+    flex-wrap: nowrap;
     list-style: none;
     margin-bottom: 30px;
   }
@@ -1538,7 +1549,7 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
-    grid-gap: 15px;
+    grid-gap: 10px;
   }
   .featured-item {
     /* margin: 0 10px; */
@@ -1546,7 +1557,7 @@
   }
   .featured-item img,
   .background-img {
-    width: 220px;
+    width: 150px;
   }
   
   .background-cover {
